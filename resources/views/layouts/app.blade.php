@@ -1,3 +1,7 @@
-<div>
-    <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-</div>
+@extends('layouts.clean')
+
+@section('childContent')
+    @include('layouts.components.header')
+    @yield('content')
+    @include('layouts.components.footer')
+@endsection
